@@ -14,7 +14,7 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 <img>
 ```
 ## Code Example
-``html
+```html
 
 ```
 ## API Reference
