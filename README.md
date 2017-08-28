@@ -1,4 +1,4 @@
-imageSequence
+jQuery imageSequence Plugin
 =============
 _Description: What does this project do and who does it serve?_
 
