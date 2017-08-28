@@ -31,7 +31,7 @@ $("img.image-sequence").imageSequence({
       data-easing="true">
 ```
 
-[Demo Here](http://98oktay.github.io/imageSequence/demo/)
+[Demo Here: 98oktay.github.io/imageSequence/demo/](http://98oktay.github.io/imageSequence/demo/)
 
 ## API Reference
 
