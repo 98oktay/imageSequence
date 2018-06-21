@@ -1,15 +1,9 @@
 jQuery imageSequence Plugin
 =============
-
-## Project Setup
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word i
+_Sekans halindeki görselleri web sayfasında animasyon olarak görüntülemeye yarayan jQueri eklentisidir. _ 
 ### Using Inline (*easiest*)
-```html
-<img src="images/s44_lines-0.png" class="image-sequence" data-namepattern="s44_lines-#.png" data-startnum="0" data-endnum="59">
-```
 
-Image Sequence   | &nbsp;
+Isim   | Açıklama
 ---------------- | -----
 image-sequence   | 3D dönme özelliğine sahip olacak resmin `img` tagına eklenecek CSS classı
 data-namepattern | 3D dönüşlerinde gösterilecek ek resimlerin isim tanımları. Resimlerin 1,2,3 gibi bir sıra ile isimlendirilmiş olmaları gerekiyor. Örn: `s44_lines-#.png`
@@ -17,9 +11,11 @@ data-startnum    | İlk sekansta gösterilecek resmin numarası.
 data-endnum      | Son sekansta gösterilecek resmin numarası.
 data-starton     | Resim sekanslarının ne tür bir aksiyonla (`drag` vs) değişeceğini tanımları.
 data-easing      | Resim sekans geçişlerinde easing olup olmayacını belirtir.
-
+data-repeat      | Döngünün tekrar edip etmeyeceğini belirtir.
+data-yoyo        | Döngünün bittikten sonra geriye doğru devam etmesini sağlar.
+data-positionfixer| Görselin altına belirtilen miktarda boşluk bırakır. Starton değeri scroll ise scroll sırasında belirtildiği miktar kadar fixed kalır.
 ```html
-<img class="image-sequence" src="http://www.nurus.com/content/images/breeze-dyna-support-2.jpg" alt="" data-namepattern="breeze-dyna-support-#.jpg" data-startnum="1" data-endnum="8" data-starton="drag" 
+<img class="image-sequence" src="images/s44_lines-0.png" alt="" data-namepattern="s44_lines-#.png" data-startnum="0" data-endnum="59" data-starton="drag" 
 data-easing="true"/>
 </div>
 ```
