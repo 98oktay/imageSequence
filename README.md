@@ -1,6 +1,5 @@
 jQuery imageSequence Plugin
 =============
-_Description: What does this project do and who does it serve?_
 
 ## Project Setup
 
@@ -9,7 +8,23 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 ```html
 <img src="images/s44_lines-0.png" class="image-sequence" data-namepattern="s44_lines-#.png" data-startnum="0" data-endnum="59">
 ```
-### Using a method (*advanced*)
+
+Image Sequence   | &nbsp;
+---------------- | -----
+image-sequence   | 3D dönme özelliğine sahip olacak resmin `img` tagına eklenecek CSS classı
+data-namepattern | 3D dönüşlerinde gösterilecek ek resimlerin isim tanımları. Resimlerin 1,2,3 gibi bir sıra ile isimlendirilmiş olmaları gerekiyor. Örn: `s44_lines-#.png`
+data-startnum    | İlk sekansta gösterilecek resmin numarası.
+data-endnum      | Son sekansta gösterilecek resmin numarası.
+data-starton     | Resim sekanslarının ne tür bir aksiyonla (`drag` vs) değişeceğini tanımları.
+data-easing      | Resim sekans geçişlerinde easing olup olmayacını belirtir.
+
+```html
+<img class="image-sequence" src="http://www.nurus.com/content/images/breeze-dyna-support-2.jpg" alt="" data-namepattern="breeze-dyna-support-#.jpg" data-startnum="1" data-endnum="8" data-starton="drag" 
+data-easing="true"/>
+</div>
+```
+
+### Using as method (*advanced*)
 ```javascript
 $("img.image-sequence").imageSequence({
     namepattern :   "image-#.png",
@@ -31,7 +46,7 @@ $("img.image-sequence").imageSequence({
       data-easing="true">
 ```
 
-[Demo Here: 98oktay.github.io/imageSequence/demo/](http://98oktay.github.io/imageSequence/demo/)
+[View Demo: 98oktay.github.io/imageSequence/demo/](http://98oktay.github.io/imageSequence/demo/)
 
 ## API Reference
 
