@@ -1,7 +1,6 @@
 jQuery imageSequence Plugin
 =============
-_Sekans halindeki görselleri web sayfasında animasyon olarak görüntülemeye yarayan jQueri eklentisidir. _ 
-### Using Inline (*easiest*)
+_Sekans halindeki görselleri web sayfasında animasyon olarak görüntülemeye yarayan jQueri eklentisidir._ 
 
 Isim   | Açıklama
 ---------------- | -----
@@ -14,15 +13,18 @@ data-easing      | Resim sekans geçişlerinde easing olup olmayacını belirtir
 data-repeat      | Döngünün tekrar edip etmeyeceğini belirtir.
 data-yoyo        | Döngünün bittikten sonra geriye doğru devam etmesini sağlar.
 data-positionfixer| Görselin altına belirtilen miktarda boşluk bırakır. Starton değeri scroll ise scroll sırasında belirtildiği miktar kadar fixed kalır.
+
+### Using Inline
+
 ```html
 <img class="image-sequence" src="images/s44_lines-0.png" alt="" data-namepattern="s44_lines-#.png" data-startnum="0" data-endnum="59" data-starton="drag" 
 data-easing="true"/>
 </div>
 ```
 
-### Using as method (*advanced*)
+### Using as method
 ```javascript
-$("img.image-sequence").imageSequence({
+$("img.my-product-sequence").imageSequence({
     namepattern :   "image-#.png",
     startnum:       0,
     endnum:         10,
